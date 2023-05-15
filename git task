@@ -1,0 +1,45 @@
+GIT REVISON AND TASK
+
+TWO TYPES OF VERSION CONTROL SYSTEM
+
+DISTRIBUTED VERSION CONTROL SYSTEM
+CENTRALIZED VERSION CONTROL SYSTEM
+
+2.git init                                                  : to the initiate the git repo
+3.git add                                                   : to add the file in stage
+4 git rm --cached <filename>                                : to unstage the commit
+5.git restore <filename>                                    : to undo the last commit in file
+6.git config --global user.name "username"                  : add user in git locally
+7.git config --global user.name "useremail"                 : add user in git locally
+7.git remote add <url of git account>                       : to access the git hub repo and link the local and remote
+8.git push -u origin <branch_name>                          : to push the code from local to remote account in git hub
+9.git clone <url of github repo>                            : to clone the complete project from remote to local machine
+6.git fetch                                                 : 
+7.clone                                                     : SSH ssh-keygen -t ed25519 -C "Skrishnan586@gmail.com", -> cd .ssh -> ls -> cat it_ed25519.pub -> copy code and paste                                                         in git hub account in settings->ssh->add keygen->save
+8.clone                                                     : HTTPS,GIT CLI
+9.fork                                                      : account to account data copy
+10.pull                                                     : pulls the code from remote to local repo and merge the code in local repo
+11.git reset --hard & --soft                                : HARD remove commit from VCS delete data SOFT remove from VCS but data exists we can add,modify and commit
+10.pull request                                             : once developer completes and code and verified to merge with client machine can give request to client copy the code
+11.merge request                                            : once developer complete the changes in code and wants to merge with prod branch 
+12.change request                                           : update request from devoper/client
+13.git stash,save,pop,list,drop                             : to hide the commit and saves in virtual space and by stash pop add in same stage area
+14.git merge                                                : used to merge the branches to update the codes/data
+16.git checkout to branch <name>                            : to switch to existing branch to another branch
+17.git rebase                                               : used to update the branches all data will be completely copied without any error and conflicts
+18.git cherry-pick                                          : used to pick and copy the particular commit by commit id to another branch
+19.git revert  --commit <commit id>                         : used to remove the last commit from the file and creates a new commit using log reference of delete the commit
+18.git reflog                                               : to view the complete work history in git
+19.git branch <branch name> <commitid>                      : to restore the deleted branch using commit id
+20.git branch -D <branch name>                              : to delete the branch
+21.gir branch -m <old branch name> <new name>               : to rename a branch
+22.git bisect start                                         : used to find the error in multiple commits after breaking the pipeline
+23.branching strategy                                       : to maintain the code environments and build,test,deploy and production stage
+24.git squash-->not command to use git rebase -i commit id  : used to commit multiple commits as single commit
+25.how will you secure your github account                  : to update pwd frequetly-> enabling two factor auth->Keep software up-to-date->Review and manage your connected apps
+26.git branch --merged                                      : command to check merged branches in master
+27.how to restrict commit on git hub                        : settings->branches->click branch to protect->require PR->setting branch protection rule
+28.git commit --amend -m "message name"                     : to rename the commit message
+29.disable fork in GIT                                      : GitHub and click on "Settings->Danger Zone" section and click on "Options->Disable fork" checkbox and click on "Save
+30 git local vs remote                                      : git is SCM local repo where we can write/modify code -> whereas remote is HUB for acoount management
+31 git config --global core.excludesfile ~/.gitignore_global: gitignore public repository. You can also use gitignore.io to create a .gitignore file
